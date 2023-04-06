@@ -5,15 +5,14 @@ import { css } from "@emotion/react";
 // @ts-ignore
 import theme from "@rebass/preset";
 
+import { Card, Switch } from "./components";
+
 const mainCss = css`
   width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 `;
-
-import Card from "./components/Card";
-import Switch from "./components/Switch";
 
 function App() {
   return (

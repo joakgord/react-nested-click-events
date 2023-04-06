@@ -1,8 +1,7 @@
 import { useState } from "react";
 
-import { Switch } from "@rebass/forms";
-
 import { css } from "@emotion/react";
+import { Switch } from "@rebass/forms";
 
 const switchBaseCss = css`
   align-self: flex-end;
