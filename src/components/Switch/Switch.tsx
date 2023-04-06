@@ -7,7 +7,7 @@ const switchBaseCss = css`
   align-self: flex-end;
 `;
 
-function SwitchAdapter() {
+const SwitchAdapter = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleSwitchOnClick = (e: any) => {
@@ -18,15 +18,13 @@ function SwitchAdapter() {
   };
 
   return (
-    <>
-      <Switch
-        checked={toggle}
-        onClick={handleSwitchOnClick}
-        // @ts-ignore
-        css={switchBaseCss}
-      />
-    </>
+    <Switch
+      checked={toggle}
+      onClick={handleSwitchOnClick}
+      // @ts-ignore
+      css={switchBaseCss}
+    />
   );
-}
+};
 
 export default SwitchAdapter;
